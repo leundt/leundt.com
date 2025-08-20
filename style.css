@@ -23,8 +23,9 @@ body {
   color: var(--text-light);
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start; /* sobe o card */
   min-height: 100vh;
+  padding-top: 8vh; /* controla a distância do topo */
 }
 
 .profile-card {
