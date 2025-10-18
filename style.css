@@ -153,7 +153,7 @@ body.light .tagline strong { color: #000; }
   object-fit: contain;
 }
 
-.link-list a:nth-child(3) .icon { content: url('images/kick_logo.png'); }
+.link-list a:nth-child(2) .icon { content: url('images/kick_logo.png'); }
 body.light .link-list a:nth-child(3) .icon { content: url('images/kick_logo_black.png'); }
 
 .link-list a:nth-child(5) .icon { content: url('images/exitlag_logo.png'); }
@@ -199,4 +199,5 @@ body.light .link-list a:hover { color: #121212; }
   h1 { font-size: 1.6rem; }
   .link-list a { font-size: 0.9rem; padding: 0.6rem 0.8rem; }
   .top-icons { gap: 8px; }
+
 }
