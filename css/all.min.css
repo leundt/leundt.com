@@ -1,0 +1,86 @@
+/*!
+ * Font Awesome 6.4.0 (otimizado para uso local)
+ * Apenas ícones necessários (solid, brands e regular)
+ * Font-display ajustado para swap
+ */
+
+/* SOLID */
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../webfonts/fa-solid-900.woff2") format("woff2");
+}
+
+/* REGULAR */
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../webfonts/fa-regular-400.woff2") format("woff2");
+}
+
+/* BRANDS */
+@font-face {
+  font-family: "Font Awesome 6 Brands";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../webfonts/fa-brands-400.woff2") format("woff2");
+}
+
+/* Base */
+.fa,
+.fas,
+.far,
+.fab {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+/* Variantes */
+.fas,
+.fa-solid {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+.far,
+.fa-regular {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 400;
+}
+
+.fab,
+.fa-brands {
+  font-family: "Font Awesome 6 Brands";
+  font-weight: 400;
+}
+
+/* Tamanhos */
+.fa-xs { font-size: .75em; }
+.fa-sm { font-size: .875em; }
+.fa-lg { font-size: 1.25em; }
+.fa-2x { font-size: 2em; }
+.fa-3x { font-size: 3em; }
+.fa-4x { font-size: 4em; }
+.fa-5x { font-size: 5em; }
+
+/* Ajustes visuais */
+.fa-fw { text-align: center; width: 1.25em; }
+
+/* Regras gerais de ícones */
+.fa-envelope:before { content: "\f0e0"; }
+.fa-instagram:before { content: "\f16d"; }
+.fa-youtube:before { content: "\f167"; }
+.fa-discord:before { content: "\f392"; }
+.fa-amazon:before { content: "\f270"; }
+.fa-moon:before { content: "\f186"; }
+.fa-sun:before { content: "\f185"; }
