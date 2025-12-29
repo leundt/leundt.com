@@ -9,7 +9,6 @@
   --card-light: #d6d6d6;
 
   --youtube: #ff2a2a;
-  --twitch: #6441a4;
   --amazon: #ff9900;
   --exitlag: #BD0303;
   --discord: #7289da;
@@ -170,9 +169,8 @@ body.light .link-list:not(:hover) .primary { color: var(--dark); }
 
 .link-list a:nth-child(1):hover { background: var(--youtube); }
 .link-list a:nth-child(2):hover { background: var(--discord); }
-.link-list a:nth-child(3):hover { background: var(--twitch); }
-.link-list a:nth-child(4):hover { background: var(--amazon); }
-.link-list a:nth-child(5):hover { background: var(--exitlag); }
+.link-list a:nth-child(3):hover { background: var(--amazon); }
+.link-list a:nth-child(4):hover { background: var(--exitlag); }
 
 .link-list a:hover i,
 .link-list a:hover .icon {
@@ -198,3 +196,4 @@ body.light .link-list:not(:hover) .primary { color: var(--dark); }
   .profile-card { padding: 1.6rem; }
 
 }
+
