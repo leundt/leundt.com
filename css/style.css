@@ -16,8 +16,6 @@
   --email: #c71610;
   --instagram-yellow: #fcaf45;
   --instagram-pink: #e1306c;
-  --tiktok-cyan: #2af0ea;
-  --tiktok-pink: #fe2858;
 }
 
 body.light {
@@ -122,14 +120,6 @@ h1 { font-size: 2rem; margin-bottom: 0.4rem; }
   -webkit-text-fill-color: transparent;
 }
 
-.top-icons a:nth-child(3):hover i {
-  background: linear-gradient(45deg, var(--tiktok-cyan), var(--tiktok-pink));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
-}
-
 .link-list a {
   position: relative;
   display: flex;
@@ -196,4 +186,5 @@ body.light .link-list:not(:hover) .primary { color: var(--dark); }
   .profile-card { padding: 1.6rem; }
 
 }
+
 
