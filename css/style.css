@@ -1,0 +1,191 @@
+:root {
+  --dark: #121212;
+  --light: #fafafa;
+
+  --text-muted: #bbb;
+  --text-muted-light: #7a7a7a;
+
+  --card-dark: #2a2a2a;
+  --card-light: #d6d6d6;
+
+  --youtube: #ff2a2a;
+  --twitch: #8956fb;
+  --discord: #7289da;
+  --amazon: #ff9900;
+
+  --email: #c71610;
+  --instagram-yellow: #fcaf45;
+  --instagram-pink: #e1306c;
+}
+
+body.light {
+  --bg: var(--light);
+  --text: var(--dark);
+  --text-muted-current: var(--text-muted-light);
+  --card-current: var(--card-light);
+}
+
+body {
+  --bg: var(--dark);
+  --text: var(--light);
+  --text-muted-current: var(--text-muted);
+  --card-current: var(--card-dark);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding-top: 20px;
+}
+
+body,
+.profile-card,
+.top-icons a,
+.link-list a,
+.link-list a i,
+.link-list a .icon {
+  transition: background-color 0.35s ease,
+              color 0.35s ease,
+              filter 0.35s ease;
+}
+
+.profile-card {
+  text-align: center;
+  width: 90%;
+  max-width: 420px;
+  padding: 2.2rem;
+  border-radius: 1.4rem;
+}
+
+.fade-in { opacity: 0; transform: scale(0.9); animation: fade-in-scale 1s forwards; }
+.fade-up { opacity: 0; transform: translateY(20px); animation: fade-in-up 0.8s ease-out forwards var(--delay, 0s); }
+
+@keyframes fade-in-scale { to { opacity: 1; transform: scale(1); } }
+@keyframes fade-in-up { to { opacity: 1; transform: translateY(0); } }
+
+.profile-logo {
+  width: 100px; height: 100px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+.profile-logo:hover { transform: scale(1.05); }
+
+h1 { font-size: 2rem; margin-bottom: 0.4rem; }
+
+.tagline {
+  font-size: 1rem;
+  color: var(--text-muted-current);
+  margin-top: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.tagline strong { color: var(--text); }
+
+.top-icons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin: 1rem 0 1.4rem;
+}
+
+.top-icons a {
+  font-size: 1.4rem;
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.25s ease;
+}
+.top-icons a:hover { transform: scale(1.17); }
+
+.top-icons a:nth-child(1):hover i { color: var(--email); }
+
+.top-icons a:nth-child(2):hover i {
+  background: linear-gradient(45deg, var(--instagram-yellow), var(--instagram-pink));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.link-list a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1rem;
+  margin-bottom: 0.65rem;
+  border-radius: 12px;
+  font-weight: 500;
+  min-height: 44px;
+  background: var(--card-current);
+  color: var(--text);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.link-list a i {
+  position: absolute; left: 15px; top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+}
+
+.link-list a .icon {
+  position: absolute; left: 15px; top: 50%;
+  transform: translateY(-50%);
+  width: 1.2rem; height: 1.2rem;
+  object-fit: contain;
+}
+
+body.light .link-list a .icon { filter: brightness(0) saturate(100%); }
+
+.link-list:not(:hover) .primary {
+  background: var(--youtube);
+  color: var(--light);
+}
+body.light .link-list:not(:hover) .primary { color: var(--dark); }
+
+.link-list a:nth-child(1):hover { background: var(--youtube); }
+.link-list a:nth-child(2):hover { background: var(--twitch); }
+.link-list a:nth-child(3):hover { background: var(--discord); }
+.link-list a:nth-child(4):hover { background: var(--amazon); }
+
+.link-list a:hover i,
+.link-list a:hover .icon {
+  color: inherit !important;
+}
+
+#theme-toggle {
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: none;
+  background: var(--card-current);
+  color: var(--text);
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 1rem;
+  transition: background-color 0.35s ease, color 0.35s ease, transform 0.3s ease;
+}
+#theme-toggle:hover { transform: scale(1.1); }
+#theme-toggle:active { transform: scale(0.88); }
+
+@media (max-width: 360px) {
+  .profile-card { padding: 1.6rem; }
+
+}
+
+
+

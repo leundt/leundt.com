@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leundt</title>
+  <meta name="description" content="Transformando minhas ideias em uns e zeros.">
+  <meta name="author" content="Leundt">
+  <link rel="canonical" href="https://leundt.com">
+
+  <link rel="icon" type="image/webp" href="logos/leundt.webp">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Leundt">
+  <meta property="og:description" content="Transformando minhas ideias em uns e zeros.">
+  <meta property="og:url" content="https://leundt.com">
+  <meta property="og:image" content="https://leundt.com/logos/leundt.png">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Leundt">
+  <meta name="twitter:description" content="Transformando minhas ideias em uns e zeros.">
+  <meta name="twitter:image" content="https://leundt.com/logos/leundt.png">
+
+  <link rel="preload" href="css/style.css" as="style">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="preload" href="css/fontawesome.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="css/fontawesome.css"></noscript>
+</head>
+
+<body>
+
+  <main class="profile-card" role="main">
+
+    <button id="theme-toggle" class="fade-up" style="--delay:0.2s" aria-label="Alterar entre modo claro e escuro">
+      <i id="theme-icon" class="fas fa-moon"></i>
+    </button>
+
+    <figure>
+      <img src="logos/leundt.webp" alt="Foto/Avatar de Leundt" class="profile-logo fade-in" width="100" height="100" loading="eager">
+    </figure>
+
+    <header>
+      <h1 class="fade-up">Leundt</h1>
+      <p class="tagline fade-up">Transformando minhas ideias em <strong>uns</strong> e <strong>zeros</strong>.</p>
+    </header>
+
+    <div class="top-icons fade-up" style="--delay:0.4s">
+      <a href="mailto:contato@leundt.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://instagram.com/leundt" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <nav class="link-list" aria-label="Links principais">
+
+      <a href="https://www.youtube.com/@leundt" target="_blank" rel="noopener" class="fade-up primary" style="--delay:0.6s">
+        <i class="fab fa-youtube"></i> Canal no YouTube
+      </a>
+
+      <a href="https://twitch.tv/leundt" target="_blank" rel="noopener" class="fade-up" style="--delay:0.8s">
+        <i class="fab fa-twitch"></i> Live na Twitch
+      </a>
+
+      <a href="https://discord.gg/tApdxpgUdp" target="_blank" rel="noopener" class="fade-up" style="--delay:1s">
+        <i class="fab fa-discord"></i> Servidor no Discord
+      </a>
+
+      <a href="https://amzn.to/48Y74at" target="_blank" rel="noopener" class="fade-up" style="--delay:1.4s">
+        <i class="fab fa-amazon"></i> Compre na Amazon
+      </a>
+
+    </nav>
+
+  </main>
+
+  <script>
+    const toggle = document.getElementById("theme-toggle");
+    const icon = document.getElementById("theme-icon");
+
+    toggle.addEventListener("click", () => {
+      const isLight = document.body.classList.toggle("light");
+      icon.classList.toggle("fa-sun", isLight);
+      icon.classList.toggle("fa-moon", !isLight);
+    });
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+
